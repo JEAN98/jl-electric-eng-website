@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens extraídos de Figma (ver /design-tokens.md).
+ * Tailwind v4 usa configuración "CSS-first": estas variables dentro de @theme
+ * generan automáticamente utilidades (bg-brand, text-ink, shadow-card, rounded-card, font-heading, etc.)
+ * en lugar de un tailwind.config.ts + clases arbitrarias sueltas.
+ */
+@theme {
+  /* Color */
+  --color-brand: #f5b301;
+  --color-brand-hero: #f5a623;
+  --color-ink: #212121;
+  --color-ink-deep: #0a0e1a;
+  --color-neutral-700: #646463;
+  --color-neutral-600: #575752;
+  --color-neutral-500: #8a8a8a;
+  --color-neutral-400: #cbcbcb;
+  --color-neutral-300: #cacaca;
+  --color-neutral-bg: #fafafa;
+  --color-neutral-bg-alt: #f4f4f4;
+  --color-accent-gold-ink: #8f6901;
+
+  /* Tipografía */
+  --font-heading: var(--font-oswald), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+
+  /* Radios semánticos (nombres = uso, no tamaño) */
+  --radius-btn: 4px;
+  --radius-cta: 8px;
+  --radius-card: 12px;
+  --radius-pill-cta: 14px;
+  --radius-photo: 20px;
+
+  /* Sombras extraídas de Figma */
+  --shadow-brand-cta: 0px 10px 12px rgba(0, 0, 0, 0.2);
+  --shadow-card: 0px 14px 16px rgba(0, 0, 0, 0.15);
+  --shadow-project: 0px 10px 24px -10px rgba(0, 0, 0, 0.08);
+  --shadow-banner: 0px 18px 20px rgba(0, 0, 0, 0.15);
+
+  /* Animación */
+  --ease-brand: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background: var(--color-neutral-bg);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-shadow-stat {
+    text-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+  }
+}
