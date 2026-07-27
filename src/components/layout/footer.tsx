@@ -3,6 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { buildWhatsAppLink, navLinks, siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -13,7 +14,7 @@ export function Footer() {
         <div className="flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
           <a href="#inicio" className="flex items-center gap-3">
             <Image
-              src="/icons/brand/logo-mark.svg"
+              src={withBasePath("/icons/brand/logo-mark.svg")}
               alt=""
               width={48}
               height={49}
@@ -22,7 +23,7 @@ export function Footer() {
             <span className="flex flex-col leading-none">
               <span className="sr-only">{siteConfig.name} — Inicio</span>
               <Image
-                src="/icons/brand/logo-wordmark.svg"
+                src={withBasePath("/icons/brand/logo-wordmark.svg")}
                 alt=""
                 width={155}
                 height={23}

@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { buildWhatsAppLink } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 interface Project {
   image: string;
@@ -75,7 +76,7 @@ function ProjectCard({ project }: { project: Project }) {
     <article className="rounded-card shadow-project group flex h-full flex-col overflow-hidden border border-neutral-400 bg-white">
       <div className="relative h-[180px] w-full overflow-hidden">
         <Image
-          src={project.image}
+          src={withBasePath(project.image)}
           alt={project.title}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

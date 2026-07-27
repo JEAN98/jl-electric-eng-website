@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 import { buildWhatsAppLink } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 export function IntroSplit() {
   return (
@@ -38,7 +39,7 @@ export function IntroSplit() {
             className="rounded-photo relative aspect-[588/512] w-full overflow-hidden border border-neutral-400 lg:max-w-[588px]"
           >
             <Image
-              src="/images/team/jose-leandro-vega.jpg"
+              src={withBasePath("/images/team/jose-leandro-vega.jpg")}
               alt="Ing. José Leandro Vega, fundador de ElectroVega, en las instalaciones de la empresa"
               fill
               sizes="(min-width: 1024px) 588px, 100vw"

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 import { buildWhatsAppLink } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 const stats = [
   { value: "6", label: "Proyectos Electromecánicos Incluidos" },
@@ -16,7 +17,7 @@ export function Hero() {
     <section id="inicio" aria-label="Presentación" className="bg-ink-deep">
       <div className="relative isolate flex min-h-[600px] items-center overflow-hidden py-20 sm:min-h-[720px] lg:min-h-[833px]">
         <Image
-          src="/images/hero/hero-panel.jpg"
+          src={withBasePath("/images/hero/hero-panel.jpg")}
           alt=""
           fill
           priority

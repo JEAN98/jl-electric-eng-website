@@ -7,6 +7,7 @@ import { Menu, MessageCircle, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { buildWhatsAppLink, navLinks, siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between lg:h-[100px]">
           <a href="#inicio" className="flex items-center gap-3">
             <Image
-              src="/icons/brand/logo-mark.svg"
+              src={withBasePath("/icons/brand/logo-mark.svg")}
               alt=""
               width={40}
               height={41}
@@ -27,7 +28,7 @@ export function Header() {
             <span className="flex flex-col leading-none">
               <span className="sr-only">{siteConfig.name} — Inicio</span>
               <Image
-                src="/icons/brand/logo-wordmark.svg"
+                src={withBasePath("/icons/brand/logo-wordmark.svg")}
                 alt=""
                 width={140}
                 height={21}
