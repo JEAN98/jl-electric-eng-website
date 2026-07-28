@@ -59,7 +59,7 @@ export function Contact() {
               <h3 className="font-heading text-ink text-3xl font-bold sm:text-4xl">
                 Ing. José Leandro Vega
               </h3>
-              <p className="text-accent-gold-ink text-base font-semibold">
+              <p className="text-ink text-base font-semibold">
                 Ingeniero Eléctrico | Fundador
               </p>
             </div>
@@ -98,7 +98,7 @@ export function Contact() {
                 <li key={label} className="flex items-center gap-5">
                   <span
                     aria-hidden
-                    className="border-accent-gold-ink text-accent-gold-ink flex size-12 shrink-0 items-center justify-center rounded-full border"
+                    className="bg-brand text-ink flex size-12 shrink-0 items-center justify-center rounded-full"
                   >
                     <Icon className="size-5" />
                   </span>

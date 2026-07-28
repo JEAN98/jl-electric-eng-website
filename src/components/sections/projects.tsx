@@ -108,7 +108,6 @@ export function Projects() {
           <SectionHeading
             eyebrow="Portafolio de Ingeniería"
             title="Proyectos Ejecutados"
-            tone="ink"
           />
         </Reveal>
 
