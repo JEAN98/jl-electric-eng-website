@@ -50,15 +50,15 @@ function ServiceCard({ service }: { service: Service }) {
   );
 
   return (
-    <article className="rounded-card bg-ink shadow-card flex flex-col gap-8 p-8 sm:p-10 lg:p-16">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+    <article className="rounded-card bg-ink shadow-card flex flex-col gap-10 p-8 sm:p-10 lg:p-16">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-[30px]">
         <span
           className="font-heading text-brand text-5xl leading-none font-bold sm:text-6xl"
           aria-hidden
         >
           {service.number}
         </span>
-        <h3 className="font-heading text-2xl leading-snug font-bold text-balance text-white sm:text-3xl lg:text-4xl">
+        <h3 className="font-heading text-2xl leading-snug font-bold text-balance text-white sm:text-3xl lg:text-[40px]">
           {service.title}
         </h3>
       </div>

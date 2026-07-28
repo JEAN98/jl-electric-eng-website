@@ -10,7 +10,7 @@ const contactItems = [
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: siteConfig.whatsappDisplay,
+    value: siteConfig.whatsappShort,
     href: buildWhatsAppLink("Hola, quiero más información sobre ElectroVega."),
   },
   {
