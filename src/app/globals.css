@@ -33,7 +33,7 @@
   --radius-photo: 20px;
 
   /* Sombras extraídas de Figma */
-  --shadow-brand-cta: 0px 10px 12px rgba(0, 0, 0, 0.2);
+  --shadow-btn-hover: 0px 10px 20px -6px rgba(0, 0, 0, 0.22);
   --shadow-card: 0px 14px 16px rgba(0, 0, 0, 0.15);
   --shadow-project: 0px 10px 24px -10px rgba(0, 0, 0, 0.08);
   --shadow-banner: 0px 18px 20px rgba(0, 0, 0, 0.15);

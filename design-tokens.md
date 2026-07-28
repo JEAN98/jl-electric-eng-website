@@ -76,7 +76,7 @@ Cargadas vía `next/font/google` (sin CSS externo, `display: swap`, sin CLS).
 
 | Token              | Valor                                  | Uso                                                     |
 | ------------------ | -------------------------------------- | ------------------------------------------------------- |
-| `shadow-brand-cta` | `0px 10px 12px rgba(0,0,0,0.2)`        | Botón "Cotizar por WhatsApp" en nav                     |
+| `shadow-btn-hover` | `0px 10px 20px -6px rgba(0,0,0,0.22)`  | Todos los botones (`Button`), solo al hacer hover. **Desviación intencional de Figma:** el original define una sombra dura y estática (`0px 10px 12px rgba(0,0,0,0.2)`, antes `shadow-brand-cta`) solo en el botón del nav; se reemplazó por una sombra suave que aparece solo en hover, consistente en los 4 variantes de botón. |
 | `shadow-card`      | `0px 14px 16px rgba(0,0,0,0.15)`       | Tarjetas oscuras de servicio                            |
 | `shadow-project`   | `0px 10px 24px -10px rgba(0,0,0,0.08)` | Tarjetas de proyecto                                    |
 | `shadow-banner`    | `0px 18px 20px rgba(0,0,0,0.15)`       | Banda amarilla FinalCTA                                 |
