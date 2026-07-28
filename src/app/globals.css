@@ -45,6 +45,15 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Offsets anchor-scroll targets (#servicios, #proyectos, etc.) so the sticky
+       header doesn't cover the section heading. Matches the header's h-20/lg:h-[100px]. */
+    scroll-padding-top: 96px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 116px;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

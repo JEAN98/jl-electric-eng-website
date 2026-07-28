@@ -32,10 +32,12 @@ export function SectionHeading({
           {eyebrow}
         </p>
       )}
+      {/* text-brand (#F5B301) fails WCAG AA (1.7:1) on the light section backgrounds this heading
+          is always used on; accent-gold-ink keeps the gold identity at a readable 4.8:1. */}
       <h2
         className={cn(
           "font-heading text-4xl leading-[1.15] font-bold text-balance sm:text-5xl lg:text-6xl",
-          tone === "brand" ? "text-brand" : "text-ink",
+          tone === "brand" ? "text-accent-gold-ink" : "text-ink",
         )}
       >
         {title}
