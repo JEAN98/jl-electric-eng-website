@@ -26,7 +26,7 @@ export function Hero() {
         />
         <div
           aria-hidden
-          className="bg-ink-deep/85 md:from-ink-deep md:via-ink-deep/60 md:to-ink-deep/30 absolute inset-0 md:bg-gradient-to-r"
+          className="bg-ink-deep/85 md:bg-transparent md:from-ink-deep md:via-ink-deep/45 md:to-ink-deep/10 absolute inset-0 md:bg-gradient-to-r"
         />
 
         <Container size="narrow" className="relative">
