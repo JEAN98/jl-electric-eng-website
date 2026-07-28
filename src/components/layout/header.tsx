@@ -3,9 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, MessageCircle, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { WhatsAppIcon } from "@/components/ui/icons/whatsapp-icon";
 import { buildWhatsAppLink, navLinks, siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 
@@ -62,7 +63,7 @@ export function Header() {
               href={buildWhatsAppLink(
                 "Hola, quiero cotizar un proyecto electromecánico.",
               )}
-              icon={<MessageCircle className="size-[18px]" aria-hidden />}
+              icon={<WhatsAppIcon className="size-[18px]" />}
             >
               Cotizar por WhatsApp
             </Button>
@@ -115,7 +116,7 @@ export function Header() {
                 href={buildWhatsAppLink(
                   "Hola, quiero cotizar un proyecto electromecánico.",
                 )}
-                icon={<MessageCircle className="size-[18px]" aria-hidden />}
+                icon={<WhatsAppIcon className="size-[18px]" />}
                 className="w-full"
               >
                 Cotizar por WhatsApp

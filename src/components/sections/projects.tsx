@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
+import { WhatsAppIcon } from "@/components/ui/icons/whatsapp-icon";
 import { buildWhatsAppLink } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 
@@ -135,7 +135,7 @@ export function Projects() {
             href={buildWhatsAppLink(
               "Hola, tengo un proyecto en mente y quiero contarles los detalles.",
             )}
-            icon={<MessageCircle className="size-[18px]" aria-hidden />}
+            icon={<WhatsAppIcon className="size-[18px]" />}
             className="w-fit shrink-0"
           >
             Contáctanos por WhatsApp

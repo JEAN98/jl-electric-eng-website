@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { WhatsAppIcon } from "@/components/ui/icons/whatsapp-icon";
 import { buildWhatsAppLink, navLinks, siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 
@@ -52,7 +52,7 @@ export function Footer() {
             href={buildWhatsAppLink("Hola, quiero cotizar un proyecto electromecánico.")}
             variant="outline-brand"
             radius="cta"
-            icon={<MessageCircle className="size-[18px]" aria-hidden />}
+            icon={<WhatsAppIcon className="size-[18px]" />}
             className="text-sm"
           >
             Cotizar por WhatsApp

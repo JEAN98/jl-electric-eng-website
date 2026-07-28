@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
@@ -88,9 +89,10 @@ function ServiceCard({ service }: { service: Service }) {
         href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-brand hover:text-brand-hero inline-flex w-fit items-center text-base font-semibold transition-colors"
+        className="text-brand hover:text-brand-hero inline-flex w-fit items-center gap-2 text-sm font-semibold transition-colors sm:text-base"
       >
-        Solicitar información →
+        Solicitar información
+        <ArrowRight className="size-4" aria-hidden />
       </a>
     </article>
   );

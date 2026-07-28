@@ -1,6 +1,7 @@
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FacebookIcon } from "@/components/ui/icons/facebook-icon";
+import { WhatsAppIcon } from "@/components/ui/icons/whatsapp-icon";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
@@ -8,7 +9,7 @@ import { buildWhatsAppLink, siteConfig } from "@/lib/site-config";
 
 const contactItems = [
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     label: "WhatsApp",
     value: siteConfig.whatsappShort,
     href: buildWhatsAppLink("Hola, quiero más información sobre ElectroVega."),
@@ -75,7 +76,7 @@ export function Contact() {
               href={buildWhatsAppLink(
                 "Hola, quiero cotizar un proyecto con ElectroVega.",
               )}
-              icon={<MessageCircle className="size-6" aria-hidden />}
+              icon={<WhatsAppIcon className="size-6" />}
               className="w-full justify-center py-6 text-lg"
             >
               Cotiza por WhatsApp

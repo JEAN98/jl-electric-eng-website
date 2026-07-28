@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { ChevronDown, MessageCircle } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
+import { WhatsAppIcon } from "@/components/ui/icons/whatsapp-icon";
 import { buildWhatsAppLink } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 
@@ -57,13 +58,13 @@ export function Hero() {
                 )}
                 variant="hero"
                 radius="btn"
-                icon={<MessageCircle className="size-[18px]" aria-hidden />}
+                icon={<WhatsAppIcon className="size-[18px]" />}
               >
                 Escríbenos por WhatsApp
               </Button>
               <a
                 href="#servicios"
-                className="hover:text-brand-hero inline-flex items-center gap-2 text-[15px] font-semibold text-white transition-colors"
+                className="hover:text-brand-hero inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors sm:text-base"
               >
                 Ver servicios
                 <ChevronDown className="size-4" aria-hidden />
