@@ -1,6 +1,5 @@
 export const siteConfig = {
-  /** Current live GitHub Pages URL. Update alongside next.config.ts's basePath if a custom domain goes live. */
-  url: "https://jean98.github.io/jl-electric-eng-website",
+  url: "https://electrovegacr.com",
   name: "ElectroVega",
   legalName: "ElectroVega Constructora Electromecánica",
   taxId: "2-0805-0133",

@@ -1,4 +1,4 @@
-export const BASE_PATH = "/jl-electric-eng-website";
+export const BASE_PATH = "";
 
 export function withBasePath(path: string) {
   return `${BASE_PATH}${path}`;
