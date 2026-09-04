@@ -17,8 +17,7 @@ export function IntroSplit() {
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           <Reveal className="flex flex-1 flex-col items-start gap-6 lg:max-w-[577px]">
             <h2 className="font-heading text-ink text-3xl leading-[1.2] font-semibold text-balance sm:text-4xl">
-              Un Solo Contratista para tu Proyecto Electromecánico, en Cualquier Parte del
-              País
+              ¿Necesita un Solo Contratista Electromecánico para Todo Costa Rica?
             </h2>
             <p className="text-lg leading-relaxed text-neutral-700">
               Viajamos a donde esté tu proyecto, en cualquier parte del país, con el mismo

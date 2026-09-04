@@ -108,7 +108,7 @@ export function Services() {
       <Container size="wide" className="flex flex-col gap-16 lg:gap-20">
         <Reveal>
           <SectionHeading
-            title="Lo que Hacemos, de Principio a Fin"
+            title="¿Qué Hace un Contratista Electromecánico de Principio a Fin?"
             description="Presupuesto, ejecución e inspección con un solo responsable. Sin coordinar entre múltiples contratistas ni perder trazabilidad entre fases."
             descriptionClassName="max-w-full sm:max-w-[900px]"
           />
