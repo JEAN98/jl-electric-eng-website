@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/motion/reveal";
 import { buildWhatsAppLink } from "@/lib/site-config";
 
-interface Service {
+export interface Service {
   number: string;
   title: string;
   feature: string;
@@ -12,7 +12,7 @@ interface Service {
   benefit: string;
 }
 
-const services: Service[] = [
+export const services: Service[] = [
   {
     number: "01",
     title: "Elaboración de Presupuestos Electromecánicos",
